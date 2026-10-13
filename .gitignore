@@ -1,0 +1,54 @@
+# Backend .gitignore
+
+# Dependencies
+node_modules/
+
+# Environment Variables & Secrets
+.env
+.env.*
+.env.local
+.env.production
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Runtime Storage, Local Backups & Sessions
+backups/
+sessions/
+scratch/
+scratch_test_session/
+scratch_test_session_clean/
+
+# Runtime / Test Uploads
+uploads/payslips/*
+uploads/profile-*
+!uploads/.gitkeep
+!uploads/payslips/.gitkeep
+
+# Outdated Duplicate Database Export
+hrmattendencesaas.sql
+
+# Standalone Dev / Scratch / Test Scripts
+add_subs.js
+alter_*.js
+check_*.js
+create_ai_logs.js
+create_enquiries_table.js
+delete_*.js
+export_db_script.js
+find_exact.js
+fix_*.js
+list-models.js
+migrate_*.js
+read_last_logs.js
+remove_demo.js
+scratch_*.js
+script.js
+script2.js
+setup_*.js
+test*.js
+test_*.js
+update_db_roles.js
